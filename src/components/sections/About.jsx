@@ -138,7 +138,7 @@ export const About = () => {
               <span>Bachelor’s Degree in Computer Science (Cybersecurity)</span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
-              <li>Currently enrolled, October 2024 - October 2027</li>
+              <li>Technical University of Malacca, Currently enrolled, October 2024 - October 2027</li>
             </ul>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mt-2">
               <li>
