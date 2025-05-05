@@ -24,7 +24,7 @@ export const Projects = () => {
             </h3>
 
             {/* Description */}
-            <p className="text-gray-300 mb-4 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed text-justify">
               A web-based application designed to streamline the management of
               counselling sessions and client information. It provides a
               user-friendly interface for both counsellors and clients, allowing
@@ -32,7 +32,6 @@ export const Projects = () => {
               The system aims to enhance the efficiency of counselling services
               while ensuring confidentiality and data security.
             </p>
-
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-4">
               {[
@@ -89,7 +88,7 @@ export const Projects = () => {
             <h3 className="text-xl font-bold mb-4 text-white">WebDL Script</h3>
 
             {/* Description */}
-            <p className="text-gray-300 mb-4 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed text-justify">
               A command-line script for downloading videos and files from
               various websites efficiently. Supports multiple platforms and
               offers customizable download options for users who prefer

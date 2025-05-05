@@ -32,13 +32,15 @@ export const WorkExperience = () => {
             <p className="text-gray-300 mb-2">
               Government Specialized Services (GSS)
             </p>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+            <ul className="text-gray-300 space-y-4 list-disc list-inside">
               <li>
-                Civil Aviation Authority Malaysia (CAAM) - Instrument Landing
-                System (ILS) Maintenance and Support
+                Civil Aviation Authority Malaysia (CAAM)
+                <div>
+                  Instrument Landing System (ILS) Maintenance and Support
+                </div>
               </li>
               <li>
-                NG999 Malaysia's New Generation 999 services for emergency
+                NG999 Malaysia’s New Generation 999 services for emergency
                 services
               </li>
               <li>

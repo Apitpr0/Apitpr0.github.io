@@ -26,7 +26,7 @@ export const About = () => {
           About Me
         </h2>
         <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-          <p className="text-gray-300 mb-6 leading-relaxed">
+          <p className="text-gray-300 mb-6 leading-relaxed text-justify">
             Focusing on the hardware and software aspects of IT security,
             proficient in programming languages such as Python, C++, and Java. I
             have a strong foundation in networking and operating systems. I am
@@ -106,20 +106,23 @@ export const About = () => {
             </div>
           </div>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           {/* Education */}
           <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
-              📚 Diploma in Information Technology, Digital Technology in
-              Cybersecurity
+            <h3 className="text-xl font-bold mb-4 text-white flex items-start">
+              <span className="mr-2">📚</span>
+              <span>
+                Diploma in Information Technology, Digital Technology in
+                Cybersecurity
+              </span>
             </h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
               <li>
-                <strong></strong> Tasek Gelugor Metro Polytechnic (January 2021
-                - January 2024)
+                Tasek Gelugor Metro Polytechnic (January 2021 - January 2024)
               </li>
             </ul>
-            <ul className="list-disc list-inside text-gray-300 space-y-2 mt-2">
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mt-2">
               <li>
                 Relevant Coursework: Physical Security and Electronic
                 Surveillance, Data Communication and Networking, Computer
@@ -130,13 +133,14 @@ export const About = () => {
 
           {/* Degree Education */}
           <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
-              🎓 Bachelor’s Degree in Computer Science (Cybersecurity)
+            <h3 className="text-xl font-bold mb-4 text-white flex items-start">
+              <span className="mr-2">🎓</span>
+              <span>Bachelor’s Degree in Computer Science (Cybersecurity)</span>
             </h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
               <li>Currently enrolled, October 2024 - October 2027</li>
             </ul>
-            <ul className="list-disc list-inside text-gray-300 space-y-2 mt-2">
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mt-2">
               <li>
                 Relevant Coursework: Physical Security and Electronic
                 Surveillance, Data Communication and Networking, Computer
@@ -152,7 +156,7 @@ export const About = () => {
             <h3 className="text-xl font-bold mb-4 text-white">
               🎖️ Certificates
             </h3>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
               <li>
                 <strong>Certified Penetration Tester</strong> - Cyber Security
                 Malaysia
