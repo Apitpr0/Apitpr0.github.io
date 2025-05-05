@@ -1,5 +1,5 @@
 import React from "react";
-import TM from "../../assets/tm.svg";
+import TM from "../../assets/tm.webp";
 import Intern from "../../assets/intern.jpg";
 
 export const WorkExperience = () => {
@@ -19,7 +19,7 @@ export const WorkExperience = () => {
             <img
               src={TM}
               alt="Telekom Malaysia logo"
-              className="h-16 mb-4 rounded-lg border border-white/10 hover:scale-105 transition-transform duration-300"
+              className="h-16 mb-4 rounded-lg border border-white/10 hover:scale-105 transition-transform duration-300 bg-white p-2"
             />
             <h3 className="text-xl font-bold mb-2 text-white">
               Technical Assistant
