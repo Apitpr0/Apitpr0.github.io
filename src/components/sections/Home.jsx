@@ -45,8 +45,11 @@ export const Home = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 flex flex-col items-center animate-bounce cursor-pointer">
-        <a href="#about" className="text-blue-500 font-medium">
+      <div className="mt-10 flex flex-col items-center animate-bounce cursor-pointer w-full">
+        <a
+          href="#about"
+          className="text-blue-500 font-medium text-base md:text-lg"
+        >
           ↓ Scroll Down
         </a>
       </div>
