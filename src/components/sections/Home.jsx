@@ -2,7 +2,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative px-4"
+      className="min-h-screen flex flex-col items-center justify-center relative px-4"
     >
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8">
         {/* Image from Imgur (on top) */}
@@ -42,6 +42,13 @@ export const Home = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-10 flex flex-col items-center animate-bounce cursor-pointer">
+        <a href="#about" className="text-blue-500 font-medium">
+          ↓ Scroll Down
+        </a>
       </div>
     </section>
   );
