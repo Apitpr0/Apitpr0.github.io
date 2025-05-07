@@ -14,7 +14,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // 👇 Custom Smooth Scroll (faster start ➔ slower end)
+  // 👇 Custom Smooth Scroll (faster & snappier)
   useEffect(() => {
     const links = document.querySelectorAll('a[href^="#"]');
 
@@ -46,18 +46,16 @@ function App() {
     const distance = targetPosition - startPosition;
     let startTime = null;
 
-    const duration = 1500; // ms (duration for the scroll)
+    const duration = 1000; // Faster scroll (0.5 second)
 
-    // 👇 Easing: faster at start, slower at the end
-    const easeInOutQuad = (t) => {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    };
+    // 👇 Snappier easing (fast start ➔ smooth end)
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
     const animation = (currentTime) => {
       if (startTime === null) startTime = currentTime;
       const timeElapsed = currentTime - startTime;
       const run =
-        easeInOutQuad(Math.min(timeElapsed / duration, 1)) * distance +
+        easeOutCubic(Math.min(timeElapsed / duration, 1)) * distance +
         startPosition;
       window.scrollTo(0, run);
 
