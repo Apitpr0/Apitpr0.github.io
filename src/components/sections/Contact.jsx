@@ -34,9 +34,32 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center"
     >
       <div className="px-4 w-150">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Get in Touch
         </h2>
+
+        {/* Social Links */}
+        <div className="flex justify-center gap-6 mt-4 mb-8">
+          {/* GitHub Link */}
+          <a
+            href="https://github.com/yourgithubusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+          >
+            <i className="fab fa-github"></i>
+          </a>
+
+          {/* LinkedIn Link */}
+          <a
+            href="https://linkedin.com/in/yourlinkedinprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="relative">
             <input
@@ -82,7 +105,7 @@ export const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white rounded px-6 py-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            className="w-full bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
           >
             Send Message
           </button>
