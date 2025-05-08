@@ -42,7 +42,7 @@ export const Contact = () => {
         <div className="flex justify-center gap-6 mt-4 mb-8">
           {/* GitHub Link */}
           <a
-            href="https://github.com/yourgithubusername"
+            href="https://github.com/Apitpr0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
@@ -52,7 +52,7 @@ export const Contact = () => {
 
           {/* LinkedIn Link */}
           <a
-            href="https://linkedin.com/in/yourlinkedinprofile"
+            href="https://www.linkedin.com/in/afiqmuhaimin/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
