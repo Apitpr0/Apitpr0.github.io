@@ -117,7 +117,7 @@ export const About = () => {
             <img
               src="https://i.imgur.com/8DlhGEG.jpeg"
               alt="Diploma"
-              className="w-full h-48 object-contain rounded-lg mb-4"
+              className="w-full h-35 object-contain rounded-lg mb-4"
             />
             <h3 className="text-xl font-bold mb-4 text-white">
               📚 Diploma in Information Technology (Cybersecurity)
@@ -161,7 +161,7 @@ export const About = () => {
               <img
                 src="https://i.imgur.com/qgP4BHh.png"
                 alt="Degree"
-                className="w-full h-48 object-contain rounded-lg"
+                className="w-full h-35 object-contain rounded-lg"
               />
             </div>
 
