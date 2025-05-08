@@ -27,13 +27,10 @@ export const About = () => {
         </h2>
         <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
           <p className="text-gray-300 mb-6 leading-relaxed text-justify">
-            Focusing on the hardware and software aspects of IT security,
-            proficient in programming languages such as Python, C++, and Java. I
-            have a strong foundation in networking and operating systems. I am
-            also familiar with various security tools and frameworks, including
-            Burp Suite and Metasploit. My goal is to become a security engineer
-            and contribute to the field of cybersecurity by helping
-            organizations protect their systems and data from cyber threats.
+            IT security enthusiast with skills in Python, C++, and Java.
+            Familiar with networking, operating systems, and security tools like
+            Burp Suite and Metasploit. Currently learning and aiming to grow as
+            a future security engineer.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -124,9 +121,9 @@ export const About = () => {
             </ul>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mt-2">
               <li>
-                Relevant Coursework: Physical Security and Electronic
-                Surveillance, Data Communication and Networking, Computer
-                Network, Malware Analysis
+                Relevant Coursework: Ethical Hacking, Security in Web
+                Application, Security Audit, Security Operation Center,
+                Programming in Python.
               </li>
             </ul>
           </div>
@@ -138,13 +135,16 @@ export const About = () => {
               <span>Bachelor’s Degree in Computer Science (Cybersecurity)</span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
-              <li>Technical University of Malacca, Currently enrolled, October 2024 - October 2027</li>
+              <li>
+                Technical University of Malacca, Currently enrolled, October
+                2024 - October 2027
+              </li>
             </ul>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mt-2">
               <li>
                 Relevant Coursework: Physical Security and Electronic
                 Surveillance, Data Communication and Networking, Computer
-                Network, Malware Analysis
+                Network, Malware Analysis.
               </li>
             </ul>
           </div>

@@ -89,16 +89,11 @@ export const Projects = () => {
 
             {/* Description */}
             <p className="text-gray-300 mb-4 leading-relaxed text-justify">
-              A command-line script for downloading videos and files from
-              various websites efficiently. Supports multiple platforms and
-              offers customizable download options for users who prefer
-              terminal-based solutions. The script is designed to be lightweight
-              and easy to use, making it a valuable tool for users who
-              frequently download media content. It leverages the power of
-              existing tools like youtube-dl and FFmpeg to provide a seamless
-              experience. It also allows users to download videos in different
-              formats and resolutions, catering to various needs and
-              preferences.
+              A lightweight command-line tool for downloading videos and files
+              from multiple platforms. Built with youtube-dl and FFmpeg, it
+              supports various formats and resolutions with customizable
+              options. Designed for efficiency and ease of use, making it ideal
+              for users who manage media through the terminal.
             </p>
 
             {/* Tech Stack */}
