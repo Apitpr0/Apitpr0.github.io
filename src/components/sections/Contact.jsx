@@ -20,11 +20,11 @@ export const Contact = () => {
       )
       .then((result) => {
         alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset form fields after successful submission
+        setFormData({ name: "", email: "", message: "" }); // Reset form
       })
       .catch((error) => {
         alert("Failed to send message. Please try again later.");
-        console.error("Error sending message: ", error.text); // log error to the console for debugging
+        console.error("Error sending message: ", error.text);
       });
   };
 
@@ -33,14 +33,14 @@ export const Contact = () => {
       id="contact"
       className="min-h-screen flex items-center justify-center"
     >
-      <div className="px-4 w-150">
+      <div className="px-4 w-full max-w-lg mx-auto">
         <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Get in Touch
         </h2>
 
         {/* Social Links */}
         <div className="flex justify-center gap-6 mt-4 mb-8">
-          {/* GitHub Link */}
+          {/* GitHub */}
           <a
             href="https://github.com/Apitpr0"
             target="_blank"
@@ -50,7 +50,7 @@ export const Contact = () => {
             <i className="fab fa-github"></i>
           </a>
 
-          {/* LinkedIn Link */}
+          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/afiqmuhaimin/"
             target="_blank"
@@ -59,7 +59,28 @@ export const Contact = () => {
           >
             <i className="fab fa-linkedin"></i>
           </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/601162674383" // Replace with your real WhatsApp number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-green-400 text-3xl transition duration-300"
+          >
+            <i className="fab fa-whatsapp"></i>
+          </a>
+
+          {/* Telegram */}
+          <a
+            href="https://t.me/Apitpro" // Replace with your real Telegram username
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-blue-500 text-3xl transition duration-300"
+          >
+            <i className="fab fa-telegram-plane"></i>
+          </a>
         </div>
+
         <form className="space-y-6" onSubmit={handleSubmit}>
           <div className="relative">
             <input
@@ -105,7 +126,7 @@ export const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            className="w-full bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative cursor-pointer overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
           >
             Send Message
           </button>

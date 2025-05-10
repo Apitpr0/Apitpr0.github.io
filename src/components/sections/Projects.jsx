@@ -15,9 +15,8 @@ export const Projects = () => {
             <img
               src="https://i.imgur.com/ci1gXQq.png"
               alt="SKLY-CMS Screenshot"
-              className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300"
+              className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300 w-full h-60 object-contain"
             />
-
             {/* Project Title */}
             <h3 className="text-xl font-bold mb-4 text-white">
               SKLY-CMS (Counselling Management System)
@@ -77,11 +76,11 @@ export const Projects = () => {
 
           {/* WebDL Script Project */}
           <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            {/* Placeholder Image */}
+            {/* Screenshot displayed directly */}
             <img
-              src="https://i.imgur.com/7bPggFV.png" // Reuse the same image or replace with another
+              src="https://i.imgur.com/7bPggFV.png"
               alt="WebDL Script Screenshot"
-              className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300"
+              className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300 w-full h-60 object-contain"
             />
 
             {/* Project Title */}

@@ -114,29 +114,30 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Diploma Card */}
           <div className="bg-black rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <img
-              src="https://i.imgur.com/8DlhGEG.jpeg"
-              alt="Diploma"
-              className="w-full h-35 object-contain rounded-lg mb-4"
-            />
+            <div className="bg-white p-2 rounded-lg mb-4">
+              <img
+                src="https://i.imgur.com/8DlhGEG.jpeg"
+                alt="Diploma"
+                className="w-full h-35 object-contain rounded-lg"
+              />
+            </div>
             <h3 className="text-xl font-bold mb-4 text-white">
-              📚 Diploma in Information Technology (Cybersecurity)
+              📚 Diploma in Information Technology (Digital Technology) in
+              Cybersecurity
             </h3>
-            <p className="text-gray-300 mb-4 leading-relaxed">
-              <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4">
-                <li>Tasek Gelugor Metro Polytechnic (Jan 2021 - Jan 2024)</li>
-                <li>
-                  This program focuses on Computing with an emphasis on
-                  Information Technology, preparing students for diverse ICT
-                  careers. It offers technical courses along with training in
-                  English for Digital Technology, ethics, Islamic studies or
-                  Moral Education, and co-curricular activities to enhance soft
-                  skills. With a focus on self-directed learning and hands-on
-                  experience, graduates are equipped to tackle challenges in the
-                  computing technology field.
-                </li>
-              </ul>
-            </p>
+            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4 leading-relaxed">
+              <li>Tasek Gelugor Metro Polytechnic (Jan 2021 - Jan 2024)</li>
+              <li>
+                This program focuses on Computing with an emphasis on
+                Information Technology, preparing students for diverse ICT
+                careers. It offers technical courses along with training in
+                English for Digital Technology, ethics, Islamic studies or Moral
+                Education, and co-curricular activities to enhance soft skills.
+                With a focus on self-directed learning and hands-on experience,
+                graduates are equipped to tackle challenges in the computing
+                technology field.
+              </li>
+            </ul>
             <div className="flex flex-wrap gap-2">
               {[
                 "Ethical Hacking",
