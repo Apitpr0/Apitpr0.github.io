@@ -121,9 +121,12 @@ export const About = () => {
                 className="w-full h-35 object-contain rounded-lg"
               />
             </div>
-            <h3 className="text-xl font-bold mb-4 text-white">
-              📚 Diploma in Information Technology (Digital Technology) in
-              Cybersecurity
+            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-white">
+              <span>🎓</span>
+              <span>
+                Diploma in Information Technology (Digital Technology) in
+                Cybersecurity
+              </span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4 leading-relaxed">
               <li>Tasek Gelugor Metro Polytechnic (Jan 2021 - Jan 2024)</li>
@@ -166,9 +169,12 @@ export const About = () => {
               />
             </div>
 
-            <h3 className="text-xl font-bold mb-4 text-white">
-              🎓 Bachelor's Degree in Computer Science (Computer Security) with
-              Honours
+            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-white">
+              <span>🎓</span>
+              <span>
+                Bachelor's Degree in Computer Science (Computer Security) with
+                Honours
+              </span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4">
               <li>Technical University of Malacca (Oct 2024 - Oct 2027)</li>

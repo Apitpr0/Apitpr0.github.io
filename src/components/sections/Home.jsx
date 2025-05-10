@@ -4,11 +4,11 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex flex-col items-center justify-center relative px-4"
     >
-      <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8">
+      <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8 pt-16 md:pt-24">
         {/* Image from Imgur (on top) */}
         <div className="w-40 h-40 md:w-1/3 md:h-auto flex justify-center">
           <img
-            src="https://i.imgur.com/a7j3Cfm.jpeg" // Imgur image URL
+            src="https://i.imgur.com/CoJgLlv.png"
             alt="Afiq"
             className="w-full h-full rounded-full object-cover shadow-lg"
           />
@@ -16,10 +16,10 @@ export const Home = () => {
 
         {/* Text Content */}
         <div className="text-center z-10 md:text-left">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
             Hi, I'm Afiq
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto text-justify leading-relaxed">
+          <p className="text-gray-400 text-lg mb-6 max-w-lg mx-auto md:text-justify leading-relaxed">
             I'm a second-year degree student at the Technical University of
             Malacca specializing in IT Security. I am passionate about
             cybersecurity and have a keen interest in ethical hacking and
