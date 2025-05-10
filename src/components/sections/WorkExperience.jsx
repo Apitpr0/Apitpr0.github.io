@@ -32,20 +32,31 @@ export const WorkExperience = () => {
             <p className="text-gray-300 mb-2">
               Government Specialized Services (GSS)
             </p>
-            <ul className="text-gray-300 space-y-4 list-disc list-inside">
-              <li>
-                Civil Aviation Authority Malaysia (CAAM)
-                <div>
+            <ul className="text-gray-300 space-y-2 mb-4 leading-relaxed list-disc list-outside pl-6">
+              <li className="mb-2">
+                <span className="font-medium">
+                  Civil Aviation Authority Malaysia (CAAM)
+                </span>
+                <div className="text-gray-400">
                   Instrument Landing System (ILS) Maintenance and Support
                 </div>
               </li>
-              <li>
-                NG999 Malaysia’s New Generation 999 services for emergency
-                services
+              <li className="mb-2">
+                <span className="font-medium">
+                  NG999 Malaysia's New Generation 999 services
+                </span>
+                <div className="text-gray-400">
+                  Emergency services communication system
+                </div>
               </li>
               <li>
-                Ministry of Defense Malaysia (MINDEF) Automated Messaging
-                Switching System (AMSS) and Network Convergence Center (NWC)
+                <span className="font-medium">
+                  Ministry of Defense Malaysia (MINDEF)
+                </span>
+                <div className="text-gray-400">
+                  Automated Messaging Switching System (AMSS) and Network
+                  Convergence Center (NWC)
+                </div>
               </li>
             </ul>
           </div>
@@ -55,17 +66,17 @@ export const WorkExperience = () => {
             <img
               src={Intern}
               alt="Internship logo"
-              className="h-24 mb-4 rounded-lg border border-white/10 hover:scale-105 transition-transform duration-300"
+              className="h-24 mb-4 rounded-lg border border-white/10 hover:scale-105 transition-transform duration-300 bg-white p-2"
             />
             <h3 className="text-xl font-bold mb-2 text-white">
-              Junior IT Support Engineer - Intern
+              Junior IT Support Engineer
             </h3>
             <p className="text-gray-400 mb-1">
               Triodynamics Tech Venture · Internship
             </p>
             <p className="text-gray-400 mb-1">Aug 2023 – Feb 2024 · 7 mos</p>
             <p className="text-gray-400 mb-2">Penang, Malaysia · On-site</p>
-            <ul className="list-disc list-inside text-gray-300 space-y-4">
+            <ul className="text-gray-300 space-y-2 mb-4 leading-relaxed list-disc list-outside pl-6">
               <li>
                 Led the successful deployment of multiple government agencies
                 (LHDN, POJ, JPJ, SSM).
