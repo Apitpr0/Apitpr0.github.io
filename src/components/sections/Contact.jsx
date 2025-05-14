@@ -45,7 +45,7 @@ export const Contact = () => {
             href="https://github.com/Apitpr0"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+            className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
           >
             <i className="fab fa-github"></i>
           </a>
@@ -55,7 +55,7 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/afiqmuhaimin/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+            className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
           >
             <i className="fab fa-linkedin"></i>
           </a>
@@ -65,7 +65,7 @@ export const Contact = () => {
             href="https://wa.me/601162674383" // Replace with your real WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-green-400 text-3xl transition duration-300"
+            className="text-foreground hover:text-green-400 text-3xl transition duration-300"
           >
             <i className="fab fa-whatsapp"></i>
           </a>
@@ -75,7 +75,7 @@ export const Contact = () => {
             href="https://t.me/Apitpro" // Replace with your real Telegram username
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-blue-500 text-3xl transition duration-300"
+            className="text-foreground hover:text-blue-500 text-3xl transition duration-300"
           >
             <i className="fab fa-telegram-plane"></i>
           </a>
@@ -89,7 +89,7 @@ export const Contact = () => {
               id="name"
               required
               value={formData.name}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="Name"
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -103,7 +103,7 @@ export const Contact = () => {
               id="email"
               required
               value={formData.email}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="Email Address"
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -117,7 +117,7 @@ export const Contact = () => {
               required
               value={formData.message}
               rows={5}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
               placeholder="Your Message"
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
@@ -126,7 +126,7 @@ export const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative cursor-pointer overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            className="w-full bg-blue-500 text-foreground px-6 py-3 rounded font-medium transition relative cursor-pointer overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
           >
             Send Message
           </button>

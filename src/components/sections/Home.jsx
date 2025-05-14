@@ -30,7 +30,7 @@ export const Home = () => {
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"
-              className="bg-blue-500 text-white px-6 py-3 rounded font-medium transition-transform duration-200 ease-in-out relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]"
+              className="bg-blue-500 text-foreground px-6 py-3 rounded font-medium transition-transform duration-200 ease-in-out relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]"
             >
               View Project
             </a>

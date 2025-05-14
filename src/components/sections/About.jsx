@@ -27,7 +27,7 @@ export const About = () => {
         </h2>
 
         {/* Intro */}
-        <p className="text-gray-300 mb-10 leading-relaxed text-justify">
+        <p className="text-foreground mb-10 leading-relaxed text-justify">
           IT security enthusiast with skills in Python, C++, and Java. Familiar
           with networking, operating systems, and security tools like Burp Suite
           and Metasploit. Currently learning and aiming to grow as a future
@@ -40,7 +40,7 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {/* OS Proficiency */}
           <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
               Operating Systems
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -57,7 +57,7 @@ export const About = () => {
 
           {/* Programming Languages */}
           <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
               Programming Languages
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -74,7 +74,7 @@ export const About = () => {
 
           {/* Security Tools */}
           <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
               Security Tools
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -91,7 +91,7 @@ export const About = () => {
 
           {/* Monitoring Tools */}
           <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
               Monitoring Tools
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -113,7 +113,7 @@ export const About = () => {
         {/* Education Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Diploma Card */}
-          <div className="bg-black rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="bg-background rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <div className="bg-white p-2 rounded-lg mb-4">
               <img
                 src="https://i.imgur.com/8DlhGEG.jpeg"
@@ -121,14 +121,14 @@ export const About = () => {
                 className="w-full h-35 object-contain rounded-lg"
               />
             </div>
-            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-white">
+            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-foreground">
               <span>🎓</span>
               <span>
                 Diploma in Information Technology (Digital Technology) in
                 Cybersecurity
               </span>
             </h3>
-            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4 leading-relaxed">
+            <ul className="list-disc list-outside pl-6 text-foreground space-y-2 mb-4 leading-relaxed">
               <li>Tasek Gelugor Metro Polytechnic (Jan 2021 - Jan 2024)</li>
               <li>
                 This program focuses on Computing with an emphasis on
@@ -160,7 +160,7 @@ export const About = () => {
           </div>
 
           {/* Degree Card */}
-          <div className="bg-black rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="bg-background rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <div className="bg-white p-2 rounded-lg mb-4">
               <img
                 src="https://i.imgur.com/qgP4BHh.png"
@@ -169,14 +169,14 @@ export const About = () => {
               />
             </div>
 
-            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-white">
+            <h3 className="flex items-start gap-2 text-xl font-bold mb-4 text-foreground">
               <span>🎓</span>
               <span>
                 Bachelor's Degree in Computer Science (Computer Security) with
                 Honours
               </span>
             </h3>
-            <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2 mb-4">
+            <ul className="list-disc list-outside pl-6 text-foreground space-y-2 mb-4">
               <li>Technical University of Malacca (Oct 2024 - Oct 2027)</li>
               <li>
                 This course is aimed to produce highly kncwledgeable and skilful
@@ -212,8 +212,10 @@ export const About = () => {
 
         {/* Certificates */}
         <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 mt-10">
-          <h3 className="text-xl font-bold mb-4 text-white">🎖️ Certificates</h3>
-          <ul className="list-disc list-outside pl-6 text-gray-300 space-y-2">
+          <h3 className="text-xl font-bold mb-4 text-foreground">
+            🎖️ Certificates
+          </h3>
+          <ul className="list-disc list-outside pl-6 text-foreground space-y-2">
             <li>
               <strong>Certified Penetration Tester</strong> - Cyber Security
               Malaysia
