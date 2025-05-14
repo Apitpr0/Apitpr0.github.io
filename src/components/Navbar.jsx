@@ -6,8 +6,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.9)] backdrop-blur-xs border-b border-white/5">
-      <div className="max-w-5xl mx-auto px-3">
+    <nav className="container mx-auto fixed top-0 w-full z-40  backdrop-blur-xs border-b border-white/5">
+      <div className=" mx-auto px-3">
         <div className="flex justify-between items-center h-10 md:h-12">
           <a
             href="#home"

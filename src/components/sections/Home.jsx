@@ -6,7 +6,7 @@ export const Home = () => {
     >
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8 pt-16 md:pt-24">
         {/* Image from Imgur (on top) */}
-        <div className="w-32 h-32 md:w-60 md:h-60 flex justify-center">
+        <div className="w-32 h-32 md:w-80 md:h-80 flex justify-center">
           <img
             src="https://i.imgur.com/CoJgLlv.png"
             alt="Afiq"
