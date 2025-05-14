@@ -4,7 +4,7 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-5xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Featured Projects
         </h2>
@@ -18,12 +18,12 @@ export const Projects = () => {
               className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300 w-full h-60 object-contain"
             />
             {/* Project Title */}
-            <h3 className="text-xl font-bold mb-4 text-white">
+            <h3 className="text-xl font-bold mb-4 text-foreground">
               SKLY-CMS (Counselling Management System)
             </h3>
 
             {/* Description */}
-            <p className="text-gray-300 mb-4 leading-relaxed text-justify">
+            <p className="text-foreground mb-4 leading-relaxed text-justify">
               A web-based application designed to streamline the management of
               counselling sessions and client information. It provides a
               user-friendly interface for both counsellors and clients, allowing
@@ -57,7 +57,7 @@ export const Projects = () => {
                 href="https://youtu.be/qzlosrxj-B4?si=hxXEuPx99mDRaFB4"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+                className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
               >
                 <i className="fab fa-youtube"></i>
               </a>
@@ -67,7 +67,7 @@ export const Projects = () => {
                 href="https://github.com/Apitpr0/skly-cms"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+                className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
               >
                 <i className="fab fa-github"></i>
               </a>
@@ -84,10 +84,12 @@ export const Projects = () => {
             />
 
             {/* Project Title */}
-            <h3 className="text-xl font-bold mb-4 text-white">WebDL Script</h3>
+            <h3 className="text-xl font-bold mb-4 text-foreground">
+              WebDL Script
+            </h3>
 
             {/* Description */}
-            <p className="text-gray-300 mb-4 leading-relaxed text-justify">
+            <p className="text-foreground mb-4 leading-relaxed text-justify">
               A lightweight command-line tool for downloading videos and files
               from multiple platforms. Built with youtube-dl and FFmpeg, it
               supports various formats and resolutions with customizable
@@ -116,7 +118,7 @@ export const Projects = () => {
                 href="https://github.com/Apitpr0/webdl-script"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-cyan-400 text-3xl transition duration-300"
+                className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
               >
                 <i className="fab fa-github"></i>
               </a>

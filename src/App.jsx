@@ -1,4 +1,3 @@
-import "./App.css";
 import "./index.css";
 import { useState, useEffect } from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
@@ -9,6 +8,7 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Contact } from "./components/sections/Contact";
 import { WorkExperience } from "./components/sections/WorkExperience";
+import { ThemeProvider } from "@/components/theme-provider";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -67,20 +67,24 @@ function App() {
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-      <div
-        className={`min-h-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        } bg-black text-gray-100`}
-      >
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Home />
-        <About />
-        <WorkExperience />
-        <Projects />
-        <Contact />
-      </div>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <div className="bg-background ">
+          {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+          <div
+            className={`min-h-screen transition-opacity duration-700 ${
+              isLoaded ? "opacity-100" : "opacity-0"
+            }  container mx-auto`}
+          >
+            <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <Home />
+            <About />
+            <WorkExperience />
+            <Projects />
+            <Contact />
+          </div>
+        </div>
+      </ThemeProvider>
     </>
   );
 }

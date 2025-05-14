@@ -6,7 +6,7 @@ export const Home = () => {
     >
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8 pt-16 md:pt-24">
         {/* Image from Imgur (on top) */}
-        <div className="w-32 h-32 md:w-60 md:h-60 flex justify-center">
+        <div className="w-32 h-32 md:w-80 md:h-80 flex justify-center">
           <img
             src="https://i.imgur.com/CoJgLlv.png"
             alt="Afiq"
@@ -30,7 +30,7 @@ export const Home = () => {
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"
-              className="bg-blue-500 text-white px-6 py-3 rounded font-medium transition-transform duration-200 ease-in-out relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]"
+              className="bg-blue-500 text-foreground px-6 py-3 rounded font-medium transition-transform duration-200 ease-in-out relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(59,130,246,0.7)]"
             >
               View Project
             </a>

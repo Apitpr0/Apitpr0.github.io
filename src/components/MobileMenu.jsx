@@ -11,7 +11,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     >
       <button
         onClick={() => setMenuOpen(false)}
-        className="absolute top-6 right-8 text-white text-3xl focus:outline-none cursor-pointer"
+        className="absolute top-6 right-8 text-foreground text-3xl focus:outline-none cursor-pointer"
         aria-lanbel="Close menu"
       >
         &times;
@@ -19,7 +19,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#home"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-foreground my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
@@ -28,7 +28,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-foreground my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
@@ -37,7 +37,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#workexp"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-foreground my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
@@ -46,7 +46,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#projects"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-foreground my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
@@ -55,7 +55,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300 ${
+        className={`text-2xl font-semibold text-foreground my-4 transform transition-transform duration-300 ${
           menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
