@@ -2,13 +2,13 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center relative px-4"
+      className="min-h-screen flex flex-col items-center justify-center relative px-4 py-20"
     >
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-auto space-y-8 md:flex-row md:space-y-0 md:space-x-8 pt-16 md:pt-24">
         {/* Image from Imgur (on top) */}
-        <div className="w-32 h-32 md:w-80 md:h-80 flex justify-center">
+        <div className="w-40 h-40 md:w-96 md:h-96 flex justify-center">
           <img
-            src="https://i.imgur.com/CoJgLlv.png"
+            src="https://i.imgur.com/7DLX8C4.jpeg"
             alt="Afiq"
             className="w-full h-full rounded-full object-cover shadow-md"
           />
@@ -19,7 +19,7 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
             Hi, I'm Afiq
           </h1>
-          <p className="text-gray-400 text-lg mb-6 max-w-lg mx-auto md:text-justify leading-relaxed">
+          <p className="text-muted-foreground text-lg mb-6 max-w-lg mx-auto md:text-justify leading-relaxed">
             I'm a second-year degree student at the Technical University of
             Malacca specializing in IT Security. I am passionate about
             cybersecurity and have a keen interest in ethical hacking and
@@ -45,7 +45,7 @@ export const Home = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="mt-10 flex flex-col items-center animate-bounce cursor-pointer w-full">
+      <div className="mt-16 flex flex-col items-center animate-bounce cursor-pointer w-full">
         <a
           href="#about"
           className="text-blue-500 font-medium text-base md:text-lg"

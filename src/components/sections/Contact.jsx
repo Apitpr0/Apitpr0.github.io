@@ -31,7 +31,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="px-4 w-full max-w-lg mx-auto">
         <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
@@ -89,7 +89,7 @@ export const Contact = () => {
               id="name"
               required
               value={formData.name}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/20 border border-white/20 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
               placeholder="Name"
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
@@ -103,7 +103,7 @@ export const Contact = () => {
               id="email"
               required
               value={formData.email}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/20 border border-white/20 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
               placeholder="Email Address"
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
@@ -117,7 +117,7 @@ export const Contact = () => {
               required
               value={formData.message}
               rows={5}
-              className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+              className="w-full bg-white/20 border border-white/20 rounded px-4 py-3 text-foreground text-xl transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/10"
               placeholder="Your Message"
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
