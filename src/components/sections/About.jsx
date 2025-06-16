@@ -66,7 +66,7 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="w-full px-8">
-        <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 mb-10">
+        <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 mb-10">
           <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             About Me
           </h2>
@@ -86,7 +86,7 @@ export const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-x-10 mb-10">
           {/* OS Proficiency */}
-          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Operating Systems
             </h3>
@@ -98,7 +98,7 @@ export const About = () => {
           </div>
 
           {/* Programming Languages */}
-          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Programming Languages
             </h3>
@@ -110,7 +110,7 @@ export const About = () => {
           </div>
 
           {/* Security Tools */}
-          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Security Tools
             </h3>
@@ -122,7 +122,7 @@ export const About = () => {
           </div>
 
           {/* Monitoring Tools */}
-          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Monitoring Tools
             </h3>
@@ -141,7 +141,7 @@ export const About = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Diploma */}
-          <div className="bg-background rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <div className="bg-white p-2 rounded-lg mb-4">
               <img
                 src="https://i.imgur.com/8DlhGEG.jpeg"
@@ -157,13 +157,27 @@ export const About = () => {
               </span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-foreground space-y-2 mb-4 leading-relaxed">
-              <li>Tasek Gelugor Metro Polytechnic (Jan 2021 - Jan 2024)</li>
+              <li>Tasek Gelugor Metro Polytechnic (Jan 2021 – Jan 2024)</li>
               <li>
-                This program focuses on Computing with an emphasis on
-                Information Technology...
+                This diploma program introduced me to the foundations of
+                cybersecurity, computer systems, and network infrastructure. It
+                emphasized practical skills in configuring secure environments,
+                threat analysis, and system hardening.
+              </li>
+              <li>
+                I developed a strong understanding of ethical hacking
+                principles, web security techniques, and the operational role of
+                a Security Operation Center (SOC), enabling me to assess
+                vulnerabilities and defend against common cyber threats.
+              </li>
+              <li>
+                In addition to core IT subjects, I actively engaged in
+                real-world simulations and group-based security audits, which
+                honed my problem-solving and teamwork capabilities.
               </li>
             </ul>
             <div className="flex flex-wrap gap-2">
+              {/* Badges */}
               {[
                 { name: "Ethical Hacking", level: "Intermediate" },
                 { name: "Web Security", level: "Intermediate" },
@@ -188,7 +202,7 @@ export const About = () => {
           </div>
 
           {/* Degree */}
-          <div className="bg-background rounded-xl p-6 border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <div className="bg-white p-2 rounded-lg mb-4">
               <img
                 src="https://i.imgur.com/qgP4BHh.png"
@@ -204,13 +218,27 @@ export const About = () => {
               </span>
             </h3>
             <ul className="list-disc list-outside pl-6 text-foreground space-y-2 mb-4">
-              <li>Technical University of Malacca (Oct 2024 - Oct 2027)</li>
+              <li>Technical University of Malacca (Oct 2024 – Oct 2027)</li>
               <li>
-                This course is aimed to produce highly knowledgeable and
-                skillful graduates...
+                This degree program focuses on advanced cybersecurity
+                methodologies, secure system development, and digital forensics.
+                It provides theoretical grounding and hands-on practice in
+                defending enterprise systems and conducting penetration testing.
+              </li>
+              <li>
+                I expect to dive deeper into malware behavior, risk management,
+                compliance, and cloud security while working on capstone
+                projects that simulate real-world threat environments.
+              </li>
+              <li>
+                The curriculum also emphasizes research-based learning and
+                critical thinking, preparing me to adapt to rapidly evolving
+                attack vectors and security trends in the cybersecurity
+                industry.
               </li>
             </ul>
             <div className="flex flex-wrap gap-2">
+              {/* Badges */}
               {[
                 { name: "Physical Security", level: "Intermediate" },
                 { name: "Networking", level: "Intermediate" },
@@ -242,7 +270,7 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Certified Penetration Tester */}
-            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+            <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
               <h3 className="text-xl font-bold mb-4 text-foreground">
                 🎖️ Certified Penetration Tester
               </h3>
@@ -251,25 +279,24 @@ export const About = () => {
                 alt="Certified Penetration Tester"
                 className="rounded-lg border-0 shadow-md hover:scale-105 transition-transform duration-300 w-full h-48 object-contain bg-white dark:bg-transparent"
               />
-
               <p className="text-foreground mt-4">
                 Issued by <strong>Cyber Security Malaysia</strong>
               </p>
               <p className="text-foreground mt-2 text-justify leading-relaxed">
                 This certificate validates hands-on expertise in ethical hacking
-                and offensive security. The training covered real-world
-                penetration testing techniques, including vulnerability
-                assessment, exploit development, and post-exploitation. The
-                program emphasizes practical skills using tools like Metasploit,
-                Nmap, and Burp Suite, with a focus on simulating real-world
-                cyberattacks in controlled environments. Completion demonstrates
-                both theoretical understanding and applied proficiency in
-                securing modern IT infrastructures.
+                and offensive security. The training included real-world
+                penetration testing scenarios, vulnerability assessment, exploit
+                development, and post-exploitation activities. Participants
+                demonstrated proficiency in using industry-standard tools like
+                Metasploit, Nmap, and Burp Suite to simulate attacks on
+                networked systems in a controlled lab environment. It emphasizes
+                practical defense evasion, exploitation techniques, and red
+                teaming.
               </p>
             </div>
 
             {/* ASCIS 2022 */}
-            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+            <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
               <h3 className="text-xl font-bold mb-2 text-foreground">
                 🎖️ ASEAN Student Contest in Information Security (ASCIS 2022)
               </h3>
@@ -282,17 +309,18 @@ export const About = () => {
                 Role: <strong>Participant</strong>
               </p>
               <p className="text-foreground mt-2 text-justify leading-relaxed">
-                Participated in ASCIS 2022, a regional competition that
-                challenges students to solve complex information security
-                problems in areas such as web security, cryptography, reverse
-                engineering, and forensics. The event fostered collaboration,
-                strategic thinking, and hands-on problem-solving, helping
-                strengthen real-world cybersecurity skills under pressure.
+                Participated in a highly competitive regional Capture The Flag
+                (CTF) contest hosted by ASCIS, where teams solve challenges in
+                cryptography, forensics, reverse engineering, web exploitation,
+                and binary exploitation. The competition nurtures both technical
+                acumen and collaboration under pressure, simulating real-world
+                adversarial problem-solving and teamwork in time-critical
+                environments.
               </p>
             </div>
 
-            {/* PMTG InnoMetro */}
-            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+            {/* PMTG InnoMetro 2023 */}
+            <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
               <h3 className="text-xl font-bold mb-2 text-foreground">
                 🎖️ PMTG InnoMetro 2023
               </h3>
@@ -305,16 +333,17 @@ export const About = () => {
                 <strong>2nd Place – Best Project for IT</strong> (SKLY-CMS)
               </p>
               <p className="text-foreground mt-2 text-justify leading-relaxed">
-                Awarded 2nd Place for developing <strong>SKLY-CMS</strong>, a
-                Counselling Management System, at PMTG InnoMetro 2023 — an
-                innovation expo recognizing outstanding digital and educational
-                solutions. The project was judged on creativity, impact, and
-                technical execution.
+                Earned second place for developing <strong>SKLY-CMS</strong>, a
+                smart Counseling Management System designed to streamline
+                scheduling, case tracking, and communication between counselors
+                and students. The system featured secure login, encrypted data
+                storage, and real-time updates, evaluated for technical
+                innovation, usability, and relevance to educational improvement.
               </p>
             </div>
 
             {/* PMTG Innotech */}
-            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+            <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
               <h3 className="text-xl font-bold mb-2 text-foreground">
                 🎖️ PMTG Innotech
               </h3>
@@ -328,10 +357,13 @@ export const About = () => {
                 Pendidikan
               </p>
               <p className="text-foreground mt-2 text-justify leading-relaxed">
-                Participated in <strong>PMTG Innotech</strong> showcasing best
-                practices in education digitalization. Demonstrated practical
-                efforts in applying innovative tools and methods to support
-                learning and teaching processes.
+                Represented a digital innovation project under the theme of
+                <strong> Best Practices in Digital Education</strong>.
+                Demonstrated how modern technologies can enhance accessibility,
+                engagement, and outcomes in educational environments. The
+                exhibition emphasized practical implementation and digital
+                transformation in classroom settings, promoting tech-based
+                education reforms.
               </p>
             </div>
           </div>
