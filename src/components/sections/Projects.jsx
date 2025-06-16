@@ -10,7 +10,7 @@ export const Projects = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* SKLY-CMS Project */}
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <img
               src="https://i.imgur.com/ci1gXQq.png"
               alt="SKLY-CMS Screenshot"
@@ -27,7 +27,6 @@ export const Projects = () => {
               The system aims to enhance the efficiency of counselling services
               while ensuring confidentiality and data security.
             </p>
-            {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-4">
               {[
                 "HTML",
@@ -66,7 +65,7 @@ export const Projects = () => {
           </div>
 
           {/* WebDL Script Project */}
-          <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <img
               src="https://i.imgur.com/7bPggFV.png"
               alt="WebDL Script Screenshot"
@@ -82,7 +81,6 @@ export const Projects = () => {
               options. Designed for efficiency and ease of use, making it ideal
               for users who manage media through the terminal.
             </p>
-            {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mb-4">
               {["Python", "Youtube-DL", "FFmpeg", "CLI Tool"].map(
                 (tech, key) => (

@@ -66,18 +66,19 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="w-full px-8">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-          About Me
-        </h2>
-
-        <p className="text-foreground mb-10 leading-relaxed text-justify">
-          Passionate IT security student with a strong interest in ethical
-          hacking and real-world network defense. Skilled in Python, C++, and
-          Java, with hands-on experience using tools like Burp Suite,
-          Metasploit, and Wireshark. Actively exploring penetration testing,
-          firewalls, and secure network architecture to prepare for a future in
-          cybersecurity engineering.
-        </p>
+        <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 mb-10">
+          <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            About Me
+          </h2>
+          <p className="text-foreground leading-relaxed text-justify">
+            Passionate IT security student with a strong interest in ethical
+            hacking and real-world network defense. Skilled in Python, C++, and
+            Java, with hands-on experience using tools like Burp Suite,
+            Metasploit, and Wireshark. Actively exploring penetration testing,
+            firewalls, and secure network architecture to prepare for a future
+            in cybersecurity engineering.
+          </p>
+        </div>
 
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Skills
@@ -85,7 +86,7 @@ export const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-x-10 mb-10">
           {/* OS Proficiency */}
-          <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Operating Systems
             </h3>
@@ -97,7 +98,7 @@ export const About = () => {
           </div>
 
           {/* Programming Languages */}
-          <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Programming Languages
             </h3>
@@ -109,7 +110,7 @@ export const About = () => {
           </div>
 
           {/* Security Tools */}
-          <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Security Tools
             </h3>
@@ -121,7 +122,7 @@ export const About = () => {
           </div>
 
           {/* Monitoring Tools */}
-          <div className="rounded-xl p-6 border border-white/5 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+          <div className="rounded-xl p-6 border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
             <h3 className="text-xl font-bold mb-4 text-foreground">
               Monitoring Tools
             </h3>
@@ -234,33 +235,106 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Certificates */}
-        <h2 className="text-3xl font-bold mb-8 mt-12 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-          Certificates
-        </h2>
+        <div className="mt-10">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+            Certificates
+          </h2>
 
-        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 mt-10">
-          <h3 className="text-xl font-bold mb-4 text-foreground">
-            🎖️ Certificates
-          </h3>
-          <ul className="list-disc list-outside pl-6 text-foreground space-y-2">
-            <li>
-              <strong>Certified Penetration Tester</strong> - Cyber Security
-              Malaysia
-            </li>
-            <li>
-              <strong>Participant</strong> - ASEAN Student Contest in
-              Information Security (ASCIS 2022)
-            </li>
-            <li>
-              <strong>Participant</strong> - PMTG InnoMetro 2023 – 2nd Place
-              Best Project for IT, SKLY-CMS
-            </li>
-            <li>
-              <strong>Participant</strong> - PMTG Innotech – Amalan Baik
-              Pendigitalan Pendidikan
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Certified Penetration Tester */}
+            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-4 text-foreground">
+                🎖️ Certified Penetration Tester
+              </h3>
+              <img
+                src="https://i.imgur.com/WIcwwXC.png"
+                alt="Certified Penetration Tester"
+                className="rounded-lg border-0 shadow-md hover:scale-105 transition-transform duration-300 w-full h-48 object-contain bg-white dark:bg-transparent"
+              />
+
+              <p className="text-foreground mt-4">
+                Issued by <strong>Cyber Security Malaysia</strong>
+              </p>
+              <p className="text-foreground mt-2 text-justify leading-relaxed">
+                This certificate validates hands-on expertise in ethical hacking
+                and offensive security. The training covered real-world
+                penetration testing techniques, including vulnerability
+                assessment, exploit development, and post-exploitation. The
+                program emphasizes practical skills using tools like Metasploit,
+                Nmap, and Burp Suite, with a focus on simulating real-world
+                cyberattacks in controlled environments. Completion demonstrates
+                both theoretical understanding and applied proficiency in
+                securing modern IT infrastructures.
+              </p>
+            </div>
+
+            {/* ASCIS 2022 */}
+            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-2 text-foreground">
+                🎖️ ASEAN Student Contest in Information Security (ASCIS 2022)
+              </h3>
+              <img
+                src="https://i.imgur.com/RKBOnG1.png"
+                alt="ASCIS 2022 Certificate"
+                className="rounded-lg border border-white/10 shadow-md hover:scale-105 transition-transform duration-300 w-full h-48 object-contain bg-white dark:bg-transparent rotate-0"
+              />
+              <p className="text-foreground mt-4">
+                Role: <strong>Participant</strong>
+              </p>
+              <p className="text-foreground mt-2 text-justify leading-relaxed">
+                Participated in ASCIS 2022, a regional competition that
+                challenges students to solve complex information security
+                problems in areas such as web security, cryptography, reverse
+                engineering, and forensics. The event fostered collaboration,
+                strategic thinking, and hands-on problem-solving, helping
+                strengthen real-world cybersecurity skills under pressure.
+              </p>
+            </div>
+
+            {/* PMTG InnoMetro */}
+            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-2 text-foreground">
+                🎖️ PMTG InnoMetro 2023
+              </h3>
+              <img
+                src="https://i.imgur.com/lk2mLrc.jpeg"
+                alt="PMTG InnoMetro 2023 Certificate"
+                className="rounded-lg border border-white/10 shadow-md hover:scale-105 transition-transform duration-300 w-full h-48 object-contain bg-white dark:bg-transparent rotate-0"
+              />
+              <p className="text-foreground mt-4">
+                <strong>2nd Place – Best Project for IT</strong> (SKLY-CMS)
+              </p>
+              <p className="text-foreground mt-2 text-justify leading-relaxed">
+                Awarded 2nd Place for developing <strong>SKLY-CMS</strong>, a
+                Counselling Management System, at PMTG InnoMetro 2023 — an
+                innovation expo recognizing outstanding digital and educational
+                solutions. The project was judged on creativity, impact, and
+                technical execution.
+              </p>
+            </div>
+
+            {/* PMTG Innotech */}
+            <div className="p-6 rounded-xl border border-white bg-white dark:bg-transparent dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-2 text-foreground">
+                🎖️ PMTG Innotech
+              </h3>
+              <img
+                src="https://i.imgur.com/g9e2x5d.png"
+                alt="PMTG Innotech Certificate"
+                className="rounded-lg border border-white/10 shadow-md hover:scale-105 transition-transform duration-300 w-full h-48 object-contain bg-white dark:bg-transparent rotate-0"
+              />
+              <p className="text-foreground mt-4">
+                <strong>Participant</strong> – Amalan Baik Pendigitalan
+                Pendidikan
+              </p>
+              <p className="text-foreground mt-2 text-justify leading-relaxed">
+                Participated in <strong>PMTG Innotech</strong> showcasing best
+                practices in education digitalization. Demonstrated practical
+                efforts in applying innovative tools and methods to support
+                learning and teaching processes.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
