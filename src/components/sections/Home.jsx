@@ -8,7 +8,7 @@ export const Home = () => {
         {/* Image from Imgur (on top) */}
         <div className="w-40 h-40 md:w-96 md:h-96 flex justify-center">
           <img
-            src="https://i.imgur.com/7DLX8C4.jpeg"
+            src="https://i.imgur.com/hqEqTat.jpeg"
             alt="Afiq"
             className="w-full h-full rounded-full object-cover shadow-md"
           />
@@ -16,7 +16,7 @@ export const Home = () => {
 
         {/* Text Content */}
         <div className="text-center z-10 md:text-left">
-          <h1 className="text-5xl md:text-7xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 dark:from-white dark:to-gray-300 bg-clip-text text-transparent leading-tight">
             Hi, I'm Afiq
           </h1>
           <p className="text-muted-foreground text-lg mb-6 max-w-lg mx-auto md:text-justify leading-relaxed">
