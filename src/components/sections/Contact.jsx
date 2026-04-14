@@ -1,5 +1,5 @@
-import emailjs from "emailjs-com";
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useEffect } from "react";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,25 +7,40 @@ export const Contact = () => {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    // Verify environment variables are loaded
+    console.log("EmailJS Public Key:", import.meta.env.VITE_PUBLIC_KEY ? "✓ Loaded" : "✗ Not found");
+    console.log("Service ID:", import.meta.env.VITE_SERVICE_ID ? "✓ Loaded" : "✗ Not found");
+    console.log("Template ID:", import.meta.env.VITE_TEMPLATE_ID ? "✓ Loaded" : "✗ Not found");
+    
+    emailjs.init(import.meta.env.VITE_PUBLIC_KEY);
+  }, []);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
-    emailjs
-      .sendForm(
+    try {
+      const result = await emailjs.send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
-      .then((result) => {
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" }); // Reset form
-      })
-      .catch((error) => {
-        alert("Failed to send message. Please try again later.");
-        console.error("Error sending message: ", error.text);
-      });
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }
+      );
+      console.log("Email sent successfully:", result);
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Full error object:", error);
+      alert(`Failed to send message: ${error.text || error.message}`);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -126,9 +141,10 @@ export const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-foreground px-6 py-3 rounded font-medium transition relative cursor-pointer overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            disabled={isLoading}
+            className="w-full bg-blue-500 text-foreground px-6 py-3 rounded font-medium transition relative cursor-pointer overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
