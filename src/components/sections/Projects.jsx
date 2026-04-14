@@ -104,6 +104,43 @@ export const Projects = () => {
               </a>
             </div>
           </div>
+
+          {/* Workshop1_UTeM Project */}
+          <div className="p-6 rounded-xl border border-white/40 bg-background/80 dark:border-white/10 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+            <img
+              src="https://i.imgur.com/rDtCB3n.png"
+              alt="Errand Runner Management System"
+              className="rounded-lg mb-4 border border-white/10 hover:scale-105 transition-transform duration-300 w-fit h-60 object-contain mx-auto block"
+            />
+            <h3 className="text-xl font-bold mb-4 text-foreground">
+              Errand Runner Management System
+            </h3>
+            <p className="text-foreground mb-4 leading-relaxed text-justify">
+              A command-line application designed to streamline errand service management by digitizing manual operations. Built with C++ and MySQL, it features role-based access control, automated pricing calculations based on distance, secure authentication with password hashing, comprehensive CRUDS functionality, and advanced reporting for data analysis. Includes separate dashboards for administrators, runners, and customers to manage service requests, assignments, and payments efficiently.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["C++", "MySQL", "CLI", "Authentication", "Database Design"].map(
+                (tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-purple-500/20 dark:bg-purple-500/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm transition-all"
+                  >
+                    {tech}
+                  </span>
+                )
+              )}
+            </div>
+            <div className="flex gap-6">
+              <a
+                href="https://github.com/Apitpr0/Workshop1_UTeM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-cyan-400 text-3xl transition duration-300"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
